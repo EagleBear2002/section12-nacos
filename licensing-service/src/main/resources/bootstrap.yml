@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: licensingservice
+  profiles:
+    active:
+      default
+  cloud:
+    nacos:
+      config:
+        server-addr: nacos-headless:8848
+        file-extension: yml
