@@ -9,3 +9,12 @@ spring:
       config:
         server-addr: nacos-headless:8848
         file-extension: yml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
